@@ -6,7 +6,7 @@
         <div v-if="banner.length" class="slider-wrapper">
           <slider>
             <div v-for="item in banner" :key="item.id" @click.stop="selectBanner(item)">
-              <img :src="item.picUrl">
+              <img :src="item.imageUrl">
             </div>
           </slider>
         </div>
@@ -120,7 +120,7 @@ export default {
           // })
           let list = res.data.banners
           this.banner = list.splice(4)
-          // console.log(this.banner)
+          console.log(this.banner)
         } else {
           console.error('Banner 获取失败')
         }

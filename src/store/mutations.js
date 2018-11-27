@@ -40,5 +40,4 @@ const mutations = {
     state.favoriteList = list
   }
 }
-
 export default mutations

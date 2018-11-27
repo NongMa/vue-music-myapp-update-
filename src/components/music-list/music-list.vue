@@ -125,7 +125,7 @@ export default {
       }
       getRecommendListDetail(id).then((res) => {
         if (res.status === ERR_OK) {
-          this.listDetail = res.data.result.tracks.map((item) => {
+          this.listDetail = res.data.playlist.tracks.map((item) => {
             return createRecommendListSong(item)
           })
         } else {
