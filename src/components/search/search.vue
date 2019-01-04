@@ -21,7 +21,7 @@
                   <i class="icon-clear" ></i>
                 </span>
               </h1>
-              <search-list @select=addQuery @delete="deleteSearchHistory" :searches="searchHistory"></search-list>
+              <search-list @select="addQuery" @delete="deleteSearchHistory" :searches="searchHistory"></search-list>
             </div>
           </div>
           <div class="search-result">
